@@ -3,7 +3,7 @@ const Busboy = require('busboy');
 
 const { Storage } = require('@google-cloud/storage');
 const storage = new Storage({ keyFilename: "permissions.json" }); 
-const bucket = storage.bucket('tempos-gianmarco.appspot.com');
+const bucket = storage.bucket('bucketname');
 
 //Get the form data: files and fields
 const parseForm = async req => {
